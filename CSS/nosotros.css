@@ -1,0 +1,828 @@
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS - PÁGINA NOSOTROS (IDENTIDAD INSTITUCIONAL)
+   ========================================================================== */
+
+/* 1. SECCIÓN MENSAJE DE LA DIRECCIÓN */
+.director-section {
+    background-color: var(--bg-white);
+    padding: 85px 0;
+}
+
+.director-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.director-visual {
+    position: relative;
+}
+
+.director-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--border-color);
+}
+
+.director-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.97);
+    transition: var(--transition);
+}
+
+.director-card:hover .director-img {
+    transform: scale(1.03);
+}
+
+.director-badge-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(6, 35, 25, 0.95) 100%);
+    color: #ffffff;
+    padding: 30px 24px 20px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.director-name {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.director-title {
+    font-size: 0.85rem;
+    color: #4ade80;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.director-quote-badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: var(--secondary-color);
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 8px 25px rgba(0, 104, 71, 0.4);
+    border: 4px solid #ffffff;
+}
+
+.director-text .lead-quote {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-style: italic;
+    color: var(--primary-color);
+    line-height: 1.45;
+    margin-bottom: 22px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.director-text p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.director-signature {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.signature-seal {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.signature-info h4 {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+.signature-info span {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+
+/* 2. MISIÓN, VISIÓN Y PROPÓSITO */
+.mission-vision-section {
+    background-color: var(--bg-light);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mv-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 38px 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mv-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--secondary-color);
+}
+
+.mv-icon-wrap {
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin-bottom: 24px;
+    transition: var(--transition);
+}
+
+.mv-card.mission .mv-icon-wrap {
+    background: rgba(0, 104, 71, 0.12);
+    color: var(--secondary-color);
+}
+
+.mv-card.vision .mv-icon-wrap {
+    background: rgba(206, 17, 38, 0.12);
+    color: var(--accent-color);
+}
+
+.mv-card.purpose .mv-icon-wrap {
+    background: rgba(0, 104, 71, 0.12);
+    color: var(--secondary-color);
+}
+
+.mv-card:hover .mv-icon-wrap {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.mv-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.mv-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    flex-grow: 1;
+}
+
+.mv-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border-color);
+}
+
+.mv-bullets li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.mv-bullets li i {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+
+/* 3. VALORES INSTITUCIONALES */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.value-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px 24px;
+    transition: var(--transition);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--secondary-color);
+}
+
+.value-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--secondary-light), #f0fdfa);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.value-card:hover .value-icon {
+    background: var(--secondary-color);
+    color: #ffffff;
+    transform: rotate(8deg);
+}
+
+.value-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.value-content p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+/* 4. LÍNEA DE TIEMPO HISTÓRICA */
+.timeline-section {
+    background-color: var(--bg-light);
+}
+
+.timeline-wrapper {
+    position: relative;
+    max-width: 950px;
+    margin: 40px auto 0 auto;
+    padding: 20px 0;
+}
+
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(180deg, var(--secondary-color) 0%, #ffffff 50%, var(--accent-color) 100%);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 45px;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 45px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 45px;
+    text-align: left;
+}
+
+.timeline-node {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+    border: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0, 104, 71, 0.2);
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.timeline-item:nth-child(odd) .timeline-node {
+    right: -11px;
+}
+
+.timeline-item:nth-child(even) .timeline-node {
+    left: -11px;
+}
+
+.timeline-item:hover .timeline-node {
+    transform: scale(1.3);
+    background: var(--accent-color);
+    border-color: #ffffff;
+}
+
+.timeline-content {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 24px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.timeline-year {
+    display: inline-block;
+    background: var(--secondary-light);
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 0.88rem;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+/* 5. PLANA JERÁRQUICA Y LIDERAZGO DOCENTE */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 26px;
+    margin-top: 35px;
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--secondary-color);
+}
+
+.team-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 18px auto;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    box-shadow: 0 8px 20px rgba(0, 104, 71, 0.25);
+    border: 3px solid #ffffff;
+}
+
+.team-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+}
+
+.team-role {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+}
+
+.team-desc {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* 6. GALERÍA VIDA ESCOLAR INTERACTIVA */
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery-filter-btn {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+    background: var(--secondary-color);
+    color: #ffffff;
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 104, 71, 0.3);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 270px;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(6, 35, 25, 0.9) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(0, 104, 71, 0.4) 0%, rgba(6, 35, 25, 0.95) 100%);
+}
+
+.gallery-caption-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.gallery-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fca5a5;
+}
+
+.gallery-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.gallery-zoom-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-zoom-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ==========================================================================
+   LOGROS EMBLEMÁTICOS Y ALIANZAS ESTRATÉGICAS
+   ========================================================================== */
+
+/* 5.1. CUADRO DE HONOR Y LOGROS EMBLEMÁTICOS */
+.achievements-section {
+    background-color: var(--bg-white);
+    padding: 90px 0;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.achievement-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 32px 26px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--secondary-color);
+}
+
+.achievement-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    background: var(--secondary-light);
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.achievement-card.gold .achievement-icon-wrap {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.achievement-card.red .achievement-icon-wrap {
+    background: var(--accent-light);
+    color: var(--accent-color);
+}
+
+.achievement-card:hover .achievement-icon-wrap {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.achievement-badge {
+    align-self: flex-start;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: var(--bg-light);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    margin-bottom: 12px;
+}
+
+.achievement-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.achievement-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* 5.2. ALIANZAS Y CONVENIOS ESTRATÉGICOS */
+.partnerships-section {
+    background-color: var(--bg-light);
+    padding: 90px 0;
+}
+
+.partnerships-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.partner-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px 22px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary-color);
+}
+
+.partner-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    background: var(--secondary-light);
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.partner-card:hover .partner-icon-wrap {
+    background: var(--secondary-color);
+    color: #ffffff;
+    transform: rotate(6deg);
+}
+
+.partner-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.partner-tag {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.partner-card p {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Responsive Nosotros */
+@media (max-width: 1024px) {
+    .director-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .partnerships-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partnerships-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-wrapper::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 55px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+        left: 0 !important;
+    }
+
+    .timeline-node {
+        left: 9px !important;
+        right: auto !important;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto e Información Institucional | I.E. N° 80018 República de México</title>
+    <meta name="description"
+        content="Ponte en contacto con la I.E. N° 80018 República de México en Trujillo. Solicita vacantes para Primaria y Secundaria, agenda visitas guiadas y comunícate con secretaría.">
+    <meta name="keywords"
+        content="Contacto Colegio República de México, Vacantes Primaria Secundaria, Matrícula Escolar Trujillo, I.E. 80018">
+    <meta name="author" content="I.E. N° 80018 República de México">
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Hojas de Estilo -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Enlace accesible de salto -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Overlay móvil -->
+    <div class="nav-overlay" aria-hidden="true"></div>
+
+    <!-- HEADER INSTITUCIONAL -->
+    <header class="header">
+        <div class="header-nav-wrap">
+            <div class="container header-content">
+                <a href="index.html" class="logo" aria-label="Inicio - I.E. República de México">
+                    <div class="logo-icon-wrap" aria-hidden="true">
+                        <img src="./img/logo.png" alt="Logo de la IE">
+                    </div>
+                    <span class="logo-text">
+                        <span class="logo-title">República de México</span>
+                        <span class="logo-subtitle">I.E. N° 80018 • Trujillo</span>
+                    </span>
+                </a>
+
+                <nav class="nav" id="main-nav" aria-label="Menú principal de navegación">
+                    <div class="nav-drawer-header">
+                        <div class="nav-drawer-brand">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            <span>República de México</span>
+                        </div>
+                        <button type="button" class="nav-close-btn" aria-label="Cerrar menú">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                        <li><a href="niveles.html" class="nav-link">Niveles Educativos</a></li>
+                        <li><a href="index.html#noticias" class="nav-link">Novedades</a></li>
+                        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                    </ul>
+
+                    <div class="nav-drawer-footer">
+                        <a href="contacto.html" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contactar Secretaría
+                        </a>
+                        <div class="drawer-contact-info">
+                            <p><i class="fa-solid fa-phone" aria-hidden="true"></i>(+51) 970240371</p>
+                            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Trujillo, La Libertad</p>
+                        </div>
+                    </div>
+                </nav>
+
+                <button type="button" class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido-principal">
+
+        <!-- 1. HERO DE CONTACTO -->
+        <section class="page-hero" aria-label="Cabecera de contacto institucional">
+            <div class="page-hero-bg" style="background-image: url('./img/colegio.jpeg');" aria-hidden="true"></div>
+            <div class="page-hero-overlay" aria-hidden="true"></div>
+
+            <div class="container page-hero-content scroll-anim">
+                <span class="section-tag"><i class="fa-solid fa-headset" aria-hidden="true"></i> Atención Personalizada</span>
+                <h1 class="page-hero-title">
+                    Canales de Contacto & <br>
+                    <span class="highlight">Atención a Familias</span>
+                </h1>
+                <p class="page-hero-desc">
+                    Estamos a tu completa disposición para orientarte sobre vacantes disponibles en Primaria y Secundaria, requisitos de matrícula y agendamiento de visitas guiadas.
+                </p>
+                <nav class="breadcrumb" aria-label="Migas de pan">
+                    <a href="index.html">Inicio</a>
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    <span class="current">Contacto</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- 2. HUB DE CONTACTO Y FORMULARIO INTERACTIVO -->
+        <section class="section contact-hub-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-layout-grid">
+
+                    <!-- Panel de Información Institucional (Izquierda) -->
+                    <article class="contact-info-card scroll-anim">
+                        <h2 id="contact-heading" style="display:none;">Información Institucional</h2>
+                        <h3>Sede y Atención</h3>
+                        <p class="card-intro">
+                            Comunícate directamente con nuestros departamentos o acércate a la secretaría del colegio en horario hábil.
+                        </p>
+
+                        <div class="contact-channels-list">
+                            <div class="channel-item">
+                                <div class="channel-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="channel-info">
+                                    <h4>Dirección Institucional</h4>
+                                    <p>Calle Dresdel 215, Trujillo, La Libertad - Perú</p>
+                                </div>
+                            </div>
+
+                            <div class="channel-item">
+                                <div class="channel-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                                <div class="channel-info">
+                                    <h4>Teléfonos de Contacto</h4>
+                                    <p>
+                                        <a href="#">Central Telefónica: (+51) 970240371</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="channel-item">
+                                <div class="channel-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="channel-info">
+                                    <h4>Correo Oficial</h4>
+                                    <p>
+                                        <a href="#">anitapretelhoyos@ierm.edu.pe</a><br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="channel-item">
+                                <div class="channel-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                                <div class="channel-info">
+                                    <h4>Horario de Atención Presencial</h4>
+                                    <p>
+                                        <strong>Lunes a Viernes:</strong> 7:00 AM – 6:30 PM<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Atención Directa WhatsApp -->
+                        <div class="wa-direct-box">
+                            <div class="wa-direct-info">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                <div>
+                                    <h5>Canal Directo de WhatsApp</h5>
+                                    <span>Respuestas inmediatas sobre vacantes</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/+51970240371?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20matr%C3%ADcula%20y%20vacantes%20escolares." target="_blank" rel="noopener noreferrer" class="btn-wa-direct">
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Chatear
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Formulario Interactivo de Solicitud (Derecha) -->
+                    <article class="contact-form-card scroll-anim stagger-1">
+                        <span class="form-header-badge"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Mesa de Partes Digital</span>
+                        <h3>Solicitud de Información</h3>
+                        <p class="form-desc">
+                            Completa el siguiente formulario para solicitar información sobre matrícula o coordinar una atención con nuestro equipo.
+                        </p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre y Apellidos del Apoderado <span class="required">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej. Juan Carlos Pérez" required>
+                                        <i class="fa-solid fa-user" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="telefono">Celular / WhatsApp <span class="required">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ej. 999 666 333" required>
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico <span class="required">*</span></label>
+                                <div class="input-icon-wrap">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="nombre@correo.com" required>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nivel">Nivel de Interés <span class="required">*</span></label>
+                                    <select id="nivel" name="nivel" class="form-control" required>
+                                        <option value="" disabled selected>Selecciona el nivel</option>
+                                        <option value="Nivel Primaria">Nivel Primaria (1° a 6° Grado)</option>
+                                        <option value="Nivel Secundaria">Nivel Secundaria (1° a 5° Año)</option>
+                                        <option value="Ambos Niveles">Ambos Niveles</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="asunto">Tipo de Solicitud <span class="required">*</span></label>
+                                    <select id="asunto" name="asunto" class="form-control" required>
+                                        <option value="" disabled selected>Selecciona el asunto</option>
+                                        <option value="Solicitud de Vacante 2026">Solicitud de Vacante 2026</option>
+                                        <option value="Traslado Escolar">Traslado Escolar</option>
+                                        <option value="Visita Guiada al Campus">Visita Guiada al Campus</option>
+                                        <option value="Cita con Dirección">Cita con Dirección / Psicopedagogía</option>
+                                        <option value="Consulta General">Consulta General</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje o Consulta Específica <span class="required">*</span></label>
+                                <div class="input-icon-wrap">
+                                    <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Indícanos el grado de Primaria o Secundaria del estudiante y cualquier duda o consulta..." required></textarea>
+                                    <i class="fa-solid fa-message" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="politica" name="politica" required checked>
+                                <label for="politica">Acepto la política de protección de datos institucionales para ser contactado respecto a las vacantes escolares 2026.</label>
+                            </div>
+
+                            <div class="submit-btn-wrap">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true" style="font-size: 1.2rem;"></i> Enviar Solicitud por WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MAPA Y CÓMO LLEGAR -->
+        <section class="section location-section" aria-labelledby="location-heading">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tag">Nuestra Sede</span>
+                    <h2 id="location-heading" class="section-title">¿Cómo Llegar a Nuestra IE?</h2>
+                    <div class="title-underline center"></div>
+                    <p class="section-desc">
+                        Estamos ubicados en una zona céntrica, segura y accesible de Trujillo, con facilidades de transporte público y estacionamiento.
+                    </p>
+                </header>
+
+                <div class="map-grid">
+                    <!-- Mapa Embed Responsivo -->
+                    <div class="map-frame-card scroll-anim">
+                        <iframe
+                            title="Ubicación oficial de la I.E. República de México en Trujillo"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.670200534957!2d-79.0438801898147!3d-8.103960991891295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d97dc992409%3A0xf388b8b437865b60!2sInstituci%C3%B3n%20Educativa%2080018%20Rep%C3%BAblica%20de%20M%C3%A9xico!5e1!3m2!1ses!2spe!4v1793243025378!5m2!1ses!2spe"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Indicaciones de Llegada -->
+                    <div class="location-tips-card scroll-anim stagger-1">
+                        <h3><i class="fa-solid fa-signs-post" aria-hidden="true"></i> Indicaciones Prácticas</h3>
+                        <div class="tips-list">
+                            <div class="tip-item">
+                                <i class="fa-solid fa-bus-simple" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Transporte Público</h4>
+                                    <p>Las líneas de microbuses y combis que transitan por la Av. Principal te dejan a solo media cuadra de la puerta principal.</p>
+                                </div>
+                            </div>
+
+                            <div class="tip-item">
+                                <i class="fa-solid fa-car" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Acceso Vehicular</h4>
+                                    <p>Zona de bahía vehicular señalizada frente al colegio para el embarque y desembarque seguro de estudiantes.</p>
+                                </div>
+                            </div>
+
+                            <div class="tip-item">
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Seguridad Escolar</h4>
+                                    <p>Control de ingreso permanente con registro de visitas y personal de vigilancia en horarios de entrada y salida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CONSULTAS FRECUENTES DE MATRÍCULA (FAQ RÁPIDO) -->
+        <section class="section faq-quick-section" aria-labelledby="faq-quick-heading">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tag">Resolviendo Dudas</span>
+                    <h2 id="faq-quick-heading" class="section-title">Consultas Frecuentes de Matrícula</h2>
+                    <div class="title-underline center"></div>
+                </header>
+
+                <div class="faq-quick-grid">
+                    <article class="quick-faq-card scroll-anim">
+                        <h4><i class="fa-solid fa-circle-question" aria-hidden="true"></i> ¿Qué documentos necesito para la matrícula o traslado?</h4>
+                        <p>Copia del DNI del estudiante y apoderados, libreta de notas del año anterior y ficha única de matrícula SIAGIE del colegio de procedencia.</p>
+                    </article>
+
+                    <article class="quick-faq-card scroll-anim stagger-1">
+                        <h4><i class="fa-solid fa-circle-question" aria-hidden="true"></i> ¿El colegio realiza entrevista psicopedagógica?</h4>
+                        <p>Sí, una breve evaluación formativa y entrevista psicopedagógica familiar para conocer los estilos de aprendizaje del estudiante.</p>
+                    </article>
+
+                    <article class="quick-faq-card scroll-anim stagger-2">
+                        <h4><i class="fa-solid fa-circle-question" aria-hidden="true"></i> ¿Hay vacantes para traslados a mitad de año?</h4>
+                        <p>Las vacantes por traslado se evalúan de acuerdo a la disponibilidad de cupos en cada sección. Comunícate con secretaría para confirmación.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BANNER CTA PRE-FOOTER -->
+        <section class="cta-banner" aria-label="Llamado de atención a familias">
+            <div class="container cta-banner-content">
+                <div class="cta-text">
+                    <span class="cta-tag"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Año Escolar 2026</span>
+                    <h2>Asegura una educación de excelencia para tu hijo</h2>
+                    <p>Contáctanos hoy mismo para reservar tu cita y conocer de cerca nuestra propuesta para Primaria y Secundaria.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/+51970240371?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20matr%C3%ADcula%20y%20vacantes%20escolares." class="btn btn-primary btn-large">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i> Llamar Directo
+                    </a>
+                    <a href="niveles.html" class="btn btn-secondary btn-large">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Ver Niveles
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL COMPLETO -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo footer-logo" aria-label="I.E. República de México">
+                    <div class="logo-icon-wrap" aria-hidden="true">
+                        <img src="./img/logo.png" alt="Logo de la IE">
+                    </div>
+                    <span class="logo-text">
+                        <span class="logo-title">República de México</span>
+                        <span class="logo-subtitle">I.E. N° 80018 • Trujillo</span>
+                    </span>
+                </a>
+                <p class="footer-desc">
+                    Institución Educativa N° 80018 "República de México" - Trujillo. Más de 55 años dedicados a forjar líderes con valores cívicos, conocimiento analítico y compromiso social.
+                </p>
+                <div class="footer-badges">
+                    <span class="pill-badge"><i class="fa-solid fa-check" aria-hidden="true"></i> R.D. Oficial MINEDU</span>
+                    <span class="pill-badge"><i class="fa-solid fa-check" aria-hidden="true"></i> Primaria & Secundaria</span>
+                </div>
+                <nav class="social-links" aria-label="Redes sociales institucionales">
+                    <a href="https://www.facebook.com/share/1MUyq3bQSh/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+
+            <nav class="footer-nav" aria-label="Enlaces del portal">
+                <h3 class="footer-heading">Navegación</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Quiénes Somos</a></li>
+                    <li><a href="niveles.html#primaria"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Nivel Primaria</a></li>
+                    <li><a href="niveles.html#secundaria"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Nivel Secundaria</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Contacto y Citas</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <h3 class="footer-heading">Sede y Contacto</h3>
+                <address class="footer-address">
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>Calle Dresdel 215, Trujillo, La Libertad - Perú</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <a href="#">(+51) 970240371 </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <a href="#">anitapretelhoyos@ierm.edu.pe</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            <span>Lunes a Viernes: 7:00 AM - 6:30 PM</span>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 I.E. N° 80018 República de México • Angeles Mileva Portilla Neyra. Todos los derechos reservados.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Política de Privacidad</a>
+                    <span>•</span>
+                    <a href="#">Términos Institucionales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE ÉXITO EN EL ENVÍO -->
+    <div id="formSuccessModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+            <div class="modal-success-icon" aria-hidden="true" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 id="modalTitle">¡Solicitud Enviada a WhatsApp!</h3>
+            <p>
+                Se ha generado y abierto tu consulta en WhatsApp con los datos del formulario. Si la ventana no se abrió automáticamente, pulsa el botón a continuación:
+            </p>
+            <div id="modalDataSummary" class="modal-summary-box">
+                <!-- Se rellena dinámicamente con JS -->
+            </div>
+            <div class="modal-actions">
+                <a id="modalWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: #25d366; border-color: #25d366;">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Abrir WhatsApp Ahora
+                </a>
+                <button type="button" id="modalCloseBtn" class="btn btn-secondary" style="color: var(--primary-color); border-color: var(--border-color);">
+                    Cerrar y Volver al Portal
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Interactividad -->
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

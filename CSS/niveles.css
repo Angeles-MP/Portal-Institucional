@@ -1,0 +1,547 @@
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS - PÁGINA NIVELES EDUCATIVOS (PRIMARIA Y SECUNDARIA)
+   ========================================================================== */
+
+/* 1. BARRA NAVEGADORA DE NIVELES */
+.levels-nav-bar {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 18px 0;
+    position: sticky;
+    top: 75px;
+    z-index: 900;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.levels-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.level-quick-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--primary-color);
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.level-quick-btn i {
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    transition: var(--transition);
+}
+
+.level-quick-btn:hover {
+    background: var(--secondary-color);
+    color: #ffffff;
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 104, 71, 0.25);
+}
+
+.level-quick-btn:hover i {
+    color: #ffffff;
+}
+
+/* 2. BLOQUE DE DETALLE DE NIVEL (PRIMARIA & SECUNDARIA) */
+.level-showcase {
+    padding: 90px 0;
+    position: relative;
+}
+
+.level-header-wrap {
+    margin-bottom: 50px;
+}
+
+.level-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.level-badge.primary-tag {
+    background: #e6f5ee;
+    color: var(--secondary-color);
+    border: 1px solid rgba(0, 104, 71, 0.3);
+}
+
+.level-badge.secondary-tag {
+    background: #fef2f2;
+    color: var(--accent-color);
+    border: 1px solid rgba(206, 17, 38, 0.3);
+}
+
+.level-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 55px;
+    align-items: flex-start;
+}
+
+.level-grid.reverse {
+    grid-template-columns: 0.95fr 1.05fr;
+}
+
+/* Contenido del Nivel */
+.level-description {
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: var(--text-main);
+    margin-bottom: 25px;
+}
+
+.level-description strong {
+    color: var(--primary-color);
+}
+
+.level-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.level-feature-item {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.bg-light .level-feature-item {
+    background: #ffffff;
+}
+
+.level-feature-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary-color);
+}
+
+.feature-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.primary-icon {
+    background: #e6f5ee;
+    color: var(--secondary-color);
+}
+
+.secondary-icon {
+    background: #fef2f2;
+    color: var(--accent-color);
+}
+
+.level-feature-item h4 {
+    font-size: 0.98rem;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.level-feature-item p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* Plan Curricular y Horario Box */
+.level-schedule-box {
+    background: linear-gradient(135deg, rgba(0, 104, 71, 0.08), rgba(206, 17, 38, 0.06));
+    border-left: 4px solid var(--secondary-color);
+    padding: 20px 24px;
+    border-radius: 0 14px 14px 0;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.schedule-item i {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.schedule-item h5 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.schedule-item span {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Perfil del Egresado Card */
+.graduate-profile-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: var(--shadow-sm);
+    margin-top: 15px;
+}
+
+.graduate-profile-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.graduate-profile-card h4 i {
+    color: var(--accent-color);
+}
+
+.graduate-profile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.graduate-profile-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.graduate-profile-list li i {
+    color: var(--secondary-color);
+    margin-top: 4px;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+/* Visual Media del Nivel */
+.level-visual-wrap {
+    position: relative;
+}
+
+.level-media-card {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.level-media-img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.level-media-card:hover .level-media-img {
+    transform: scale(1.04);
+}
+
+.level-stats-ribbon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(6, 35, 25, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ribbon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ribbon-val {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #4ade80;
+    line-height: 1.2;
+}
+
+.ribbon-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 2px;
+}
+
+.level-floating-card {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    z-index: 5;
+    animation: floatAnim 5s ease-in-out infinite;
+}
+
+.level-grid.reverse .level-floating-card {
+    right: auto;
+    left: -20px;
+}
+
+@keyframes floatAnim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.floating-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--accent-light);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.floating-info h6 {
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+.floating-info p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* 3. TABLA COMPARATIVA RESPONSIVA */
+.comparison-section {
+    background-color: var(--bg-white);
+    padding: 95px 0;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    background: #ffffff;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 650px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table thead th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.comparison-table thead th:nth-child(2) {
+    background-color: var(--secondary-color);
+}
+
+.comparison-table thead th:nth-child(3) {
+    background-color: var(--accent-color);
+}
+
+.comparison-table tbody tr:hover {
+    background-color: var(--bg-light);
+}
+
+.comparison-table td.feature-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comparison-table td.feature-title i {
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.comparison-table td {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+}
+
+/* 4. TALLERES EXTRACURRICULARES Y CLUBES */
+.workshops-section {
+    background-color: var(--bg-light);
+    padding: 90px 0;
+}
+
+.workshops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 35px;
+}
+
+.workshop-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--secondary-color);
+}
+
+.workshop-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    background: var(--secondary-light);
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.workshop-card:hover .workshop-icon {
+    background: var(--secondary-color);
+    color: #ffffff;
+    transform: rotate(-6deg);
+}
+
+.workshop-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.workshop-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.workshop-badge {
+    display: inline-block;
+    background: var(--bg-light);
+    color: var(--text-main);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    align-self: flex-start;
+}
+
+/* Responsive Niveles */
+@media (max-width: 1024px) {
+    .level-grid,
+    .level-grid.reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .level-grid.reverse .level-visual-wrap {
+        order: -1;
+    }
+
+    .workshops-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .levels-nav-bar {
+        top: 60px;
+    }
+
+    .level-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workshops-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .level-floating-card {
+        display: none;
+    }
+}
